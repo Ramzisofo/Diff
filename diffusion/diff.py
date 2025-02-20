@@ -30,7 +30,7 @@ import requests
 from sentencepiece import SentencePieceProcessor, SentencePieceTrainer
 from tqdm import tqdm
 
-input = "/content/drive/MyDrive/modular-diffusion/examples/data/representative/in/modular-diffusion/examples/data/representative/in/afhq"
+input = "../modular-diffusion/examples/data/representative/in/modular-diffusion/examples/data/representative/in/afhq"
 
 c, h, w, p, q = 3, 64, 64, 2, 2
 x, _ = zip(*ImageFolder(str(input), ToTensor()))
