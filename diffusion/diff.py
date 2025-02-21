@@ -30,7 +30,15 @@ import requests
 from sentencepiece import SentencePieceProcessor, SentencePieceTrainer
 from tqdm import tqdm
 
-input = "/data"
+import os
+
+# Get current working directory
+current_path = os.getcwd()
+
+print("Current Working Directory:", current_path)
+
+
+input = "/data/dog"
 
 c, h, w, p, q = 3, 64, 64, 2, 2
 x, _ = zip(*ImageFolder(str(input), ToTensor()))
