@@ -12,7 +12,12 @@
 #SBATCH --constraint=gpu
 #SBATCH --hint=nomultithread
 
+cd ..
+cd ..
 uenv start prgenv-gnu/24.11:v1 --view=default
 source ./pytorch-env/bin/activate
+cd Diff
+cd diffusion
+
 
 python diff.py
